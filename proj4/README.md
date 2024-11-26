@@ -22,10 +22,18 @@ Log accuracy additonally when training
 https://discuss.huggingface.co/t/metrics-for-training-set-in-trainer/2461/7
 
 ## Feedback stage 1:
+Stage 1 feedback: Very good
 
 
 ## Feedback stage 2: 
 
 
 ## Feedback presentation: 
+Grade: 4.5
+Preprocessing: Do you lowercase?
+Input/output format: Missing.
+Model: Good, but a bit confusing: For DeBERTa you say input is 512 (which is length) and output is 768 (which is hidden size).
+Experiments: Use exponential steps for the learning rate.
+Results: Really low training accuracy and no comment on it. Doesn't the confusion matrix show a minority class classifier?
+Interpretation: Good.
 
