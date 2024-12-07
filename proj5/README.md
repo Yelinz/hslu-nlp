@@ -1,4 +1,11 @@
 # Project 5
+Our task is reading comprehension with the BoolQ dataset. Use an LLM (≥ 1B parameters) from Hugging Face. It should not be trained on the BoolQ dataset yet, but sometimes we don’t know.
+- Evaluate it directly with 5 diverse prompts.
+- Then train it with parameter-efficient fine-tuning (I suggest LoRA, see e.g. the HF blog post or quicktour).
+- Use a quantized version as the base model (search for "AWQ" or "GPTQ" in the model name).
+    - If that doesn’t work, it may be easier to quantize the model yourself with bitsandbytes.
+- Since an LLM is a text generation model, make sure to describe how you get predictions from it.
+
 Leads
 https://www.datacamp.com/tutorial/fine-tuning-llama-3-1
 https://medium.com/@kshitiz.sahay26/fine-tuning-llama-2-for-news-category-prediction-a-step-by-step-comprehensive-guide-to-fine-tuning-48c06dee28a9
